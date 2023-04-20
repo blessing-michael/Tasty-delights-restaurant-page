@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { AiFillMinusSquare, AiFillPlusSquare } from 'react-icons/ai'
 
 function DisplayQues({title,info}) {
-    console.log(title,info, "coming from display ques")
+    // console.log(title,info, "coming from display ques")
     const [showInfo, setShowInfo]=useState(false)
   return (
-    <div>
+    <div className='question-info'>
         
-        <h3>{title}</h3>
+        {/* <h3>{title}</h3>
         <button onClick={()=> setShowInfo(!showInfo)}>{showInfo? <AiFillMinusSquare/> :<AiFillPlusSquare/> }</button>
-        {showInfo && <p>{info}</p>}
+        {showInfo && <p>{info}</p>} */}
 
     </div>
   )

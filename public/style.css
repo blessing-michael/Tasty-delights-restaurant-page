@@ -2,6 +2,7 @@
 
 *{
     margin: 0;
+    /* padding: 0; */
 }
 
 /* header styling */
@@ -236,18 +237,16 @@
 
 /* end of reviews styling */
 
-/* beginning of follous styling */
+/* beginning of followus styling */
 .followus{
-    /* width: 90%; */
-    /* height: 400px; */
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: ; */
-    /* margin: 10px; */
+  
 }
 .follow-div{
-    width: 90%;
+    width: 80%;
     height: 300px;
     border-radius: 5px;
     position: relative;
@@ -256,12 +255,27 @@
     background-color: rgb(230, 227, 226);
 
 }
+.follow-img{
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    /* bottom: 0%; */
+    /* background-color: aqua; */
+    width: 200px;
+    text-align: end;
+
+
+}
+.follow-image{
+    max-width: 50%;
+    rotate: 20deg;
+}
 .playstore{
     position: absolute;
     top: 10%;
     display: flex;
     flex-direction: column;
-    right: 0%;
+    left: 0%;
     /* background-color: aquamarine; */
     height: 100px;
     width: 180px;
@@ -286,8 +300,16 @@
     bottom: 0%;
     left: 10%;
     display: flex;
-    justify-content: space-between;
+    max-width: 200px;
   
+
+}
+.app-image{
+    max-width: 50%;
+    margin-right: 20px;
+}
+.play-image{
+    max-width: 50%;
 
 }
 .limitless-h3{
@@ -303,7 +325,7 @@
     color: whitesmoke;
     margin-top: 3rem;
     padding: 20px;
-    line-height: 1.6;
+    line-height: 1.6; 
     
 }
 .all-rights{
@@ -311,16 +333,15 @@
 }
 .socials{
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-around; */
-    font-size: 1.7rem;
+    font-size: 1.7rem; 
     margin-bottom: 2rem;
+
 }
 /* end of footer */
 
 /* beginninng of navabar styling */
 .nav{
-    height: 450px;
+    height: 440px;
     background-color: white;
     position: absolute;
     right: 0%;
@@ -332,9 +353,6 @@
 ul li{
     list-style-type: none;
     margin: 20px;
-}
-li:hover{
-    background-color: lightgrey;
 }
 
 /* end of navbar styling */

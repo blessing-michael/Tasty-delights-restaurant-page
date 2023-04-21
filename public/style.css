@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&family=Roboto:wght@100&family=Satisfy&display=swap');
+
 *{
     margin: 0;
 }
@@ -121,7 +123,7 @@
 
 /* beginning of menu styling */
 .img-menu{
-    max-width: 90%;
+    max-width: 85%;
     border:  2px solid rgb(223, 93, 46);
     border-radius: 5px;
     /* height: 120px; */
@@ -150,6 +152,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem 0rem;
+    /* box-shadow: ; */
     /* max-width: 25rem; */
   }
   .item-info header {
@@ -157,6 +160,10 @@
     justify-content: space-between;
     border-bottom: 0.5px dotted rgb(159, 156, 156);
     /* border-bottom: 0.5px dotted var(--clr-grey-5); */
+  }
+  .rev-btnContainer{
+    display: flex;
+    justify-content: space-around;
   }
 /* end  of menu styling  */
 /* .btn{
@@ -168,6 +175,169 @@
 
 
 /* end of category styling */
+
+/* beginning of reviews styling */
+.rev-article{
+    background-color: rgb(245, 217, 207);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    flex-direction: column;
+    margin: 4rem 0;
+    padding: 5px;
+}
+.rev-container{
+    background-color: whitesmoke;
+    width: 80%;
+    height: 250px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    /* animation: animate 15s infinite linear;
+    animation-delay: 1s; */
+}
+.img-reviews{
+    text-align: center;
+    margin-top: 20px;
+}
+.image-reviews{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.reviews-info{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(51, 50, 50);
+}
+.rev-text{
+    margin: 10px 20px;
+    color: rgb(51, 50, 50);
+}
+.rev-button{
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+}
+.rev-words{
+    color: rgb(51, 50, 50);
+    margin-bottom: 1.5rem;
+}
+
+/* @keyframes animate {
+    0%{
+        transform: translateX(100%) scale(0.5);
+    }
+    50%{
+        transform: translateX(100%) scale(0.7);
+    }
+    
+} */
+
+/* end of reviews styling */
+
+/* beginning of follous styling */
+.followus{
+    /* width: 90%; */
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: ; */
+    /* margin: 10px; */
+}
+.follow-div{
+    width: 90%;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    
+    background-color: rgb(230, 227, 226);
+
+}
+.playstore{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+    /* background-color: aquamarine; */
+    height: 100px;
+    width: 180px;
+    padding: 10px;
+
+}
+.getapp{
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    font-family: 'Satisfy', cursive;
+    font-size:1.5rem;
+    /* font-family: 'Noto Sans Lao', sans-serif,'Roboto'; */
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Satisfy', cursive; */
+    margin-bottom: 20px;
+
+
+}
+.playstore-img{
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.limitless-h3{
+    /* text-transform: capitalize; */
+    color: rgb(71, 70, 70);
+}
+
+/* end of follow us styling */
+
+/* beginning of footer */
+.footer{
+    background-color:black ;
+    color: whitesmoke;
+    margin-top: 3rem;
+    padding: 20px;
+    line-height: 1.6;
+    
+}
+.all-rights{
+    color: rgb(198, 194, 194);
+}
+.socials{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+/* end of footer */
+
+/* beginninng of navabar styling */
+.nav{
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    right: 0%;
+    top :10%;
+    z-index: 1;
+    width: 150px;
+    transition: all 0.3s ease-out;
+}
+ul li{
+    list-style-type: none;
+    margin: 20px;
+}
+li:hover{
+    background-color: lightgrey;
+}
+
+/* end of navbar styling */
 
 .btn-container {
     

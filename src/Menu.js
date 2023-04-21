@@ -14,7 +14,7 @@ function Menu({menu}) {
 <div className="item-info">
 <header>
        <h4>{title}</h4>
-        <p>${price}</p>
+        <p style={{color:"rgb(223, 93, 46)"}}>${price}</p>
        </header>
        <p>{desc}</p>
 

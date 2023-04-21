@@ -5,6 +5,9 @@ import Menu from './Menu'
 import Category from './Category'
 import Main from './Main'
 import Nav from './Nav'
+import Reviews from './Reviews'
+import Follow from './Follow'
+import Footer from './Footer'
 
 
 //JS UNIQUE VALUES
@@ -15,6 +18,9 @@ function App() {
     const [menu, setMenu]= useState(menudata)
     // console.log(menu)
     const [categories, setCategories]= useState(allCategories)
+   
+
+  
 
     //filter according to category
 
@@ -36,8 +42,12 @@ function App() {
       <Main/>
         <Category categories={categories} filterItems={filterItems}/>
         <Menu menu={menu} />
+
+        <Reviews/>
+        <Follow/>
         
         <Questions/>
+        <Footer/>
     </div>
   )
 }

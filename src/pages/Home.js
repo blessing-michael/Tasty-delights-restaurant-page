@@ -5,6 +5,7 @@ import Menu from '../Menu'
 import Category from '../Category'
 import Reviews from '../Reviews'
 import Follow from '../Follow'
+import Cat from './Cat'
 // import menudata from "./MenuData"
 
 //JS UNIQUE VALUES
@@ -44,6 +45,7 @@ function Home() {
       <Main/>
         <Category categories={categories} filterItems={filterItems}/>
         <Menu menu={menu} />
+        
 
         <Reviews/>
         <Follow/>

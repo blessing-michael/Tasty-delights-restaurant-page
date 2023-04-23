@@ -3,9 +3,32 @@ import { CgProfile} from "react-icons/cg";
 import { HiBars4} from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
+    const {countcartItems}= props
     const [showNav, setShowNav]= useState(false)
     const navigate= useNavigate()
+
+    
+    const navcat= ()=>{
+        navigate("/cat")
+        setShowNav(false)
+    }
+    const navhome= ()=>{
+        navigate("/")
+        setShowNav(false)
+    }
+    const navfaq= ()=>{
+        navigate("/faq")
+        setShowNav(false)
+    }
+    const navsupport= ()=>{
+        navigate("/support")
+        setShowNav(false)
+    }
+    const navcart= ()=>{
+        navigate("/cart")
+        setShowNav(false)
+    }
 
     const Shownavbar=()=>{
         setShowNav(!showNav)
@@ -21,10 +44,12 @@ function Nav() {
 
     {showNav && <nav className='nav'>
         <ul>
-            <li onClick={()=> navigate("/")}>Home</li>
-            <li onClick={()=> navigate("/cat")}>Categories</li>
-            <li onClick={()=> navigate("/faq")}>Contact</li>
-            <li onClick={()=> navigate("/support")}>Support</li>
+            <li onClick={()=> navhome()}>Home</li>
+            <li onClick={()=> navcat()}>Categories</li>
+            <li onClick={()=> navfaq()}>FAQS</li>
+            <li onClick={()=> navsupport()}>Support</li>
+            <li onClick={()=> navcart()}>Cart {' '}
+            {countcartItems ? <button>{countcartItems}</button> : " "}</li>
 
         </ul></nav>}
     <button className='navbar' onClick={Shownavbar}><HiBars4/></button>

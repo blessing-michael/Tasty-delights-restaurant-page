@@ -10,6 +10,18 @@
     display: flex;
     justify-content: space-between;
     margin: 2rem 1rem;
+    /* display: -moz-inline-stack; */
+    /* display: table-column-group; */
+    /* display: table-cell; */
+    /* display: ruby-base-container; */
+    /* display: table-column; */
+    /* display: list-item; */
+    /* display: inline-flexbox; */
+    /* display: table-row-group; */
+    /* display: -ms-flexbox; */
+    /* display: -ms-inline-flexbox; */
+    /* display: inline-flex; */
+    /* flex-direction: row; */
 }
 .profile{
     background: transparent;
@@ -356,6 +368,67 @@ ul li{
 }
 
 /* end of navbar styling */
+
+/* ?beginning of styling for cat nav  */
+
+.cat-h2{
+    color: rgb(223, 93, 46);
+    text-align: center;
+
+}
+.cat-p{
+    margin: 1rem 1.5rem;
+    color: rgb(86, 84, 84);
+    font-weight: bold;
+}
+/* .cat-info{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.cat-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* TRYING OUT STYLES  keep for bigger screen style*/
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+}
+/* .col-2{
+    flex: 2;
+} */
+.block{
+    padding: 1rem;
+    background-color: bisque;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+.row-center{
+    align-items: center;
+}
+img.small{
+    max-width: 8rem;
+}
+/* end of styling cat nav */
+
+/* beginning of order now btn styling Home page */
+.ordernow-span{
+    /* background-color:  transparent; */
+    /* margin-left: 5px; */
+}
+.ordernow-btn{
+    background-color:  transparent;
+    color: rgb(223, 93, 46);
+    border-radius: 5px;
+    border: 1px solid rgb(223, 93, 46);
+    /* border: none; */
+}
+/* end of order now btn styling Home page */
 
 .btn-container {
     

@@ -11,9 +11,11 @@ import Follow from './Follow'
 import Footer from './Footer'
 import Home from './pages/Home'
 import Cat from './pages/Cat'
-import Faq from './Faq'
+import Faq from './Questions'
 import Support from './Support'
 import Basket from './Basket'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -79,7 +81,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/cat" element={<Cat onAdd={onAdd} onRemove={onRemove}/>}/>
+          <Route path="/menu" element={<Cat onAdd={onAdd} onRemove={onRemove}/>}/>
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/support" element={<Support/>}/>
           <Route path="/cart" element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>}/>
@@ -100,6 +102,18 @@ function App() {
         {/* <Follow/> */}
         
         {/* <Questions/> */}
+        <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
        
     </div>
   )

@@ -1,33 +1,33 @@
 const questions = [
     {
       id: 1,
-      title: 'Do I have to allow the use of cookies?',
+      title: 'What is Tasty Delights?',
       info:
-        'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+        'Tasty Delights is an on-demand convenience app that lets you order from a curation of the best food delicacies. Now you can order Megans granula, fries and burger, creamy shake, fried egg,  a burger & a bottle of wine all in a single order!',
     },
     {
       id: 2,
-      title: 'How do I change my My Page password?',
+      title: 'How do I order?',
       info:
-        'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+        'You can place an order by simply clicking on order on the homepage, choose from varieties of meals, click add to cart, click the cart and continue to checkout '
     },
     {
       id: 3,
-      title: 'What is BankID?',
+      title: 'How do I delete or edit orders in my basket?',
       info:
-        'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+        'You can delete or edit items in your basket by clicking the minus button, this automatically removes your item from cart',
     },
     {
       id: 4,
-      title: 'Whose birth number can I use?',
+      title: 'How can I report or resolve issues & disputes?',
       info:
-        'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
+        'You can email us at blessingmike334@gmail.com or visit the support page and send us an email',
     },
     {
       id: 5,
-      title: 'When do I recieve a password ordered by letter?',
+      title: 'What are the available payment options?',
       info:
-        'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+        'We are 100% cashless! You can pay for your order via paystack (card) or bank transfer. Please note that for bank transfers, your payment must be confirmed before your order is prepared. ',
     },
   ]
   export default questions

@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router'
 function Menu({menu}) {
     // console.log(title,category)
     const navigate= useNavigate()
+
+   
   return (
    <main className='section-center'>
    {menu.map((item)=>{
@@ -15,10 +17,12 @@ function Menu({menu}) {
 
 <div className="item-info">
 <header>
-       <h4>{title}</h4>
-        <p style={{color:"rgb(223, 93, 46)"}}>${price}</p>
+       <h4 className='iteminfo-h4'>{title}</h4>
+        <p className='iteminfo-p'>${price}</p>
        </header>
-       <p >{desc} <span className='ordernow-span'><button  className='ordernow-btn' onClick={()=> navigate("/cat")}>order now</button></span> </p>
+       <p className='iteminfo-desc'>{desc} <span className='ordernow-span'><button  className='ordernow-btn' onClick={()=> navigate("/menu")}>Order now</button></span> </p>
+
+     
        
 
 </div>

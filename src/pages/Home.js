@@ -36,6 +36,7 @@ function Home() {
     }
   return (
     <div>
+       {/* <h3 className='home'>home</h3> */}
       
 
 

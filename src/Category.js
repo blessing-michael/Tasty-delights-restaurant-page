@@ -4,11 +4,7 @@ function Category({ categories, filterItems }) {
   return (
     <div className="btn-container">
       <h2
-        style={{
-          textAlign: "center",
-          margin: "1rem 0",
-          color: " rgb(223, 93, 46)"
-        }}
+       className="categorybtn-h2"
       >
         Categories
       </h2>

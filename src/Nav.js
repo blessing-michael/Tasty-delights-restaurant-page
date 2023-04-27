@@ -10,8 +10,9 @@ function Nav(props) {
 
     
     const navcat= ()=>{
-        navigate("/cat")
+        navigate("/menu")
         setShowNav(false)
+    
     }
     const navhome= ()=>{
         navigate("/")
@@ -39,13 +40,13 @@ function Nav(props) {
   return (
    <header className='header'>
   <button className='profile'><CgProfile/></button>
-    <h3 className='home'>home</h3>
+    {/* <h3 className='home'>home</h3> */}
 
 
     {showNav && <nav className='nav'>
         <ul>
             <li onClick={()=> navhome()}>Home</li>
-            <li onClick={()=> navcat()}>Categories</li>
+            <li onClick={()=> navcat()}>Menu</li>
             <li onClick={()=> navfaq()}>FAQS</li>
             <li onClick={()=> navsupport()}>Support</li>
             <li onClick={()=> navcart()}>Cart {' '}

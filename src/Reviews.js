@@ -43,7 +43,7 @@ function Reviews() {
             <img src={img} alt={text} className="image-reviews"/>
         </div>
         <div className="reviews-info">
-            <h4 style={{textTransform:"capitalize", marginBottom:"10px"}}>{name}</h4>
+            <h4  className='reviews-h4'>{name}</h4>
             <p className='rev-text'>{text}</p>
         </div>
         <div className="rev-btnContainer">

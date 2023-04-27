@@ -9,19 +9,18 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 2rem 1rem;
-    /* display: -moz-inline-stack; */
-    /* display: table-column-group; */
-    /* display: table-cell; */
-    /* display: ruby-base-container; */
-    /* display: table-column; */
-    /* display: list-item; */
-    /* display: inline-flexbox; */
-    /* display: table-row-group; */
-    /* display: -ms-flexbox; */
-    /* display: -ms-inline-flexbox; */
-    /* display: inline-flex; */
-    /* flex-direction: row; */
+
+     /* chnged last mins */
+
+    /* margin: 2rem 1rem; */
+
+    background-color: white;
+    
+    position: sticky;
+    top: 0;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+  
 }
 .profile{
     background: transparent;
@@ -37,15 +36,15 @@
     font-size: 1.7rem;
 }
 .home{
-    margin-top: 10px;
+    /* CHANGED LAST MINS */
+    /* margin-top: 13px; */
 }
+
 /* end of header styling */
 
 /* beginning of main styling */
 .container{
-     /* background: url(../src/images/food1.jpeg); */
-     /* width: 100%;  */
-    /* height: 100px;  */
+    
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -53,6 +52,9 @@
     background-position-y: top;
     height: 400px;
     position: relative;
+
+    /* chnged last mins */
+    z-index: -1;
     /* justify-content: center; */
     /* text-align: center; */
    
@@ -88,12 +90,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: 2px 4px 4px rgba(0, 0, 0, .5);
 
-    /* color: transparent; */
-    /* -webkit-background-clip: text;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: url('+https://www.pexels.com/photo/salad-on-a-plate-2097090/+'); */
-    /* width: 100px; */
+  
 }
 @keyframes back {
     100%{
@@ -105,6 +102,8 @@
 
 
 /* end of main styling */
+
+/* BEGINNING OF CATEGORY BUTTON STYLING */
 .filtered-category{
     margin: 0 10px;
     background: transparent;
@@ -129,7 +128,13 @@
     border-radius: 2px;
 
 }
-
+.categorybtn-h2{
+    text-align: center;
+    color:  rgb(223, 93, 46);
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+/* END OF CATEGORY BUTTON STYLING */
 
 /* beginning of category styling */
 
@@ -144,11 +149,7 @@
     /* grid-template-columns: 1fr 1fr; */
 }
 
-.article{
-    /* display: flex; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-}
+
 
 
 .section-center{
@@ -160,6 +161,9 @@
     gap: 2rem 2rem;
     /* justify-items: center; */
     /* background-color: aquamarine; */
+}
+.iteminfo-p{
+    color: rgb(223, 93, 46);
 }
 .menu-item {
     display: grid;
@@ -218,6 +222,7 @@
     height: 70px;
     border-radius: 50%;
 }
+
 .reviews-info{
     text-align: center;
     margin-bottom: 20px;
@@ -235,6 +240,10 @@
 .rev-words{
     color: rgb(51, 50, 50);
     margin-bottom: 1.5rem;
+}
+.reviews-h4{
+    text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
 /* @keyframes animate {
@@ -258,11 +267,12 @@
   
 }
 .follow-div{
-    width: 80%;
+    width: 85%;
     height: 300px;
     border-radius: 5px;
     position: relative;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    z-index: -1;
     
     background-color: rgb(230, 227, 226);
 
@@ -271,8 +281,7 @@
     position: absolute;
     right: 7%;
     top: 5%;
-    /* bottom: 0%; */
-    /* background-color: aqua; */
+
     width: 200px;
     text-align: end;
 
@@ -288,7 +297,7 @@
     display: flex;
     flex-direction: column;
     left: 0%;
-    /* background-color: aquamarine; */
+    /* background-color: aqua; */
     height: 100px;
     width: 180px;
     padding: 10px;
@@ -332,6 +341,19 @@
 /* end of follow us styling */
 
 /* beginning of footer */
+.contact{
+    margin-bottom: 20px;
+}
+.footer-h2{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.footer-h3{
+    color:rgb(210, 208, 208);
+}
+.footer-p{
+    color:rgb(210, 208, 208);
+}
 .footer{
     background-color:black ;
     color: whitesmoke;
@@ -351,13 +373,14 @@
 }
 /* end of footer */
 
-/* beginninng of navabar styling */
+/* beginninng of navbar styling */
 .nav{
-    height: 440px;
+    height: 410px;
     background-color: white;
     position: absolute;
     right: 0%;
-    top :10%;
+    /* CODE CHANGED FROM 10% TO 90%, height chnged from 440px to 410 */
+    top :90%;
     z-index: 1;
     width: 150px;
     transition: all 0.3s ease-out;
@@ -391,18 +414,83 @@ ul li{
     display: flex;
     justify-content: space-between;
 }
+/* beginning of our menu Category SMALL SCREEN styling */
+.block{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin-top: 2rem;
+   
+}
+.small{
+    max-width: 70%;
+    border-radius: 5px;
+    border: 2px solid rgb(223, 93, 46);
+}
+.cat-title{
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  
+    /* margin-right: 2rem; */
+   
+
+}
+.cat-price{
+    margin-left: 2rem;
+}
+/* .cat-title{
+    margin-right: 5rem;
+} */
+
+.btn-span{
+    margin-left: 5rem;
+} 
+.add-btn{
+    background-color: rgb(223, 93, 46);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    /* text-transform: capitalize; */
+    border: 1px solid  rgb(223, 93, 46);
+    transition: all 0.3s ease-out;
+    width: 60%;
+}
+.add-btn:hover{
+   background: transparent;
+   color:rgb(223, 93, 46);
+
+}
+.catinfo-div{
+    margin: 2rem 0;
+}
+.underline{
+    width: 70px;
+    height: 3px;
+    background-color: rgb(223, 93, 46);
+    text-align: center;
+    /* margin-left: %; */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.cat-h2{
+    color: rgb(55, 55, 55);
+}
+
+/* END OF OUR MENU CAT CATGORY SMALL SCREEN STYLING */
 
 
 /* TRYING OUT STYLES  keep for bigger screen style*/
-.row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* .row{ */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
     /* justify-content: space-between; */
-}
+/* } */
 /* .col-2{
     flex: 2;
 } */
-.block{
+/* .block{
     padding: 1rem;
     background-color: bisque;
     margin: 0.5rem;
@@ -413,7 +501,7 @@ ul li{
 }
 img.small{
     max-width: 8rem;
-}
+} */
 /* end of styling cat nav */
 
 /* beginning of order now btn styling Home page */
@@ -430,9 +518,254 @@ img.small{
 }
 /* end of order now btn styling Home page */
 
+/* BEGINNING STYLING FOR SUPPORT */
+.support-us{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(230, 227, 226);
+    height: 13rem;
+    max-width:90% ;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.center-support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact-h1{
+    text-transform: capitalize;
+    color: rgb(56, 55, 55);
+    font-size: 1.8rem;
+}
+.contact-p{
+    margin: 2rem;
+    font-size: 1.1rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    /* background-color: aqua; */
+    
+}
+input{
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid rgb(189, 187, 187);
+}
+input::placeholder{
+    /* margin-left: 5rem; */
+    padding: 20px;
+}
+input:focus{
+    border: 1px solid black;
+}
+.textarea{
+    width: 90%;
+    /* margin-top: 0.5rem; */
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    margin-top: 7%;
+    /* z-index: -1; */
+    /* text-align: center; */
+    border: 1px solid rgb(189, 187, 187);
+}
+textarea::placeholder{
+    padding: 10px 20px;
+}
+.email{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom:2rem ;
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+.message{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom:2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    /* position: relative; */
+    /* z-index: -1; */
+}
+.email-label{
+    font-size: 1.2rem;
+    /* text-align: start; */
+    /* margin: 1rem 0; */
+}
+.label-message{
+    text-align: start;
+    font-size: 1.2rem;
+    /* background-color: aquamarine; */
+    /* margin: 0; */
+
+}
+.label-div{
+    /* background-color: bisque; */
+    /* position: absolute; */
+    /* left: 5%; */
+    /* margin-bottom: 10%; */
+    /* background-color: black; */
+    width: 250px;
+
+}
+.support-btn{
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color:#706C6E;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    /* margin-left: 4rem; */
+    /* text-align: center; */
+}
+/* END OF STYLING FOR SUPPORT */
+
+/* BEGINNING OF CART STYLING */
+.cart-article{
+    padding: 1rem 2rem;
+    background-color: whitesmoke;
+    margin-bottom: 4rem;
+   
+}
+.cart-h1{
+    /* margin: 0.5rem 0; */
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
+}
+.cartadd-item{
+    display: flex;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    /* margin-left: 10px; */
+    
+    
+}
+.add-cartbbtn{
+    margin-right: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 30%;
+    font-size: 1.2rem;
+
+}
+.remove-cartbtn{
+    background-color: rgb(226, 105, 72);
+    color: white;
+    border-radius: 30%;
+    font-size: 1.2rem;
+    border: none;
+  
+    
+
+}
+.item-name{
+    /* font-size: 1rem; */
+
+}
+.button{
+    margin: 0 25px;
+
+}
+.div1-cart, .div2-tax, .div4-total, .div3-shipping{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+   
+    /* flex-direction: column; */
+    
+}
+/* END OF CART STYLING */
+
+/* Beginning of question div styling */
+
+.question-div2{
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 700px; */
+    /* margin-bottom: 2rem; */
+    /* margin-left: 20%; */
+    /* width: 200px; */
+    /* height: 600px; */
+    /* text-align: center; */
+
+
+    /* background-color: aquamarine;
+    display: grid;
+    gap: 1rem 2rem;
+    width: 90vw;
+    margin: 5rem auto;
+    padding: 2.5rem 2rem; */
+   
+  
+    /* justify-content: center; */
+}
+.btn {
+    /* background: transparent;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 1rem;
+    align-self: center;
+    min-width: 2rem; */
+  }
+  main {
+    /* min-height: 100vh; */
+    /* using flex because of better browser support */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* .question-info{
+    display: flex;
+    background-color: antiquewhite;
+    width: 1200px;
+    align-self: center;
+    justify-content: center;
+} */
+
+/* END OF QUESTIONS DIV STYLING */
+
 .btn-container {
     
     text-align: center;
+    margin-bottom: 2.5rem;
+    
    
    
   }
@@ -449,3 +782,309 @@ img.small{
 /* .info{
     display: none;
 } */
+@media only screen and (min-width:768px) {
+   
+    .container{
+    
+        
+        height: 600px;
+      
+    }
+    .name{
+       
+        top: 20%;
+        left: 20%;
+    
+    }
+    .com-name{
+       
+        font-size: 4.5rem;
+        line-height: 50px;
+    }
+
+    /* END OF MAIN STYLING */
+
+    /* BEGINNING OF CATEGORY BUTTON STYLING */
+    .categorybtn-h2{
+      
+        margin: 1rem 0;
+        font-size: 3rem;
+    }
+
+    .filtered-category{
+        margin: 1rem 2rem;
+        font-size: 1.6rem;
+       
+    }
+    .filtered-category:hover{
+      padding: 0.5rem 1rem;
+       
+    }
+  
+    .iteminfo-h4{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+       
+
+    }
+    .iteminfo-p{
+        font-size: 1.3rem;
+        font-weight: bold;
+
+    }
+    .iteminfo-desc{
+        font-size: 1.5rem;
+        margin-top: 0.7rem;
+      
+
+    }
+    .ordernow-btn{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+      
+    }
+
+
+    /* END OF CATEGORY BUTTON STYLING */
+
+    /* BEGINNING OF REVIEWS STYLING */
+    .rev-article{
+        /* background-color: rgb(245, 217, 207); */
+        /* align-items: center; */
+        /* display: flex; */
+        /* justify-content: center; */
+        height: 500px;
+        /* flex-direction: column; */
+        margin: 5rem 0;
+        /* padding: 5px; */
+    }
+    .rev-words{
+        /* color: rgb(51, 50, 50); */
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+    .rev-container{
+
+    }
+    .rev-container{
+       
+        width: 80%;
+        height: 350px;
+        padding: 1rem;
+       
+    }
+    .image-reviews{
+        width: 120px;
+        height: 120px;
+    
+    }
+    .reviews-h4{
+        
+        margin: 1rem;
+        font-size: 1.5rem;
+     
+    }
+    .rev-text{
+        font-size: 1.5rem;
+        margin: 0 1.5rem;
+       
+    }
+   
+
+
+    /* END OF REVIEWS STYLING */
+
+     /* BEGINNING OF FOLLOW STYLING  */
+     .follow-div{
+        height: 400px;
+     }
+     .playstore{
+        
+        left: 10%;
+       
+        height: 200px;
+        width: 280px;
+       
+    
+    }
+    .getapp{
+        font-size: 3rem;
+    }
+    .limitless-h3{
+        font-size: 1.7rem;
+    }
+    .follow-img{
+       
+        right: 10%;
+      
+    
+        width: 350px;
+       
+    
+    
+    }
+    .playstore-img{
+      
+        max-width: 300px;
+      
+    
+    }
+    .followus{
+        margin: 8rem 0;
+    }
+   
+
+     /* END OF FOLLOW STYLING  */
+
+     /* BEGINNING OF FOOTERS STYLING */
+     .contact{
+        margin-bottom: 40px;
+    }
+    .footer-h2{
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+    .footer-h3{
+        color:whitesmoke;
+        font-size: 1.5rem;
+    }
+    .footer-p{
+        /* color:rgb(210, 208, 208); */
+        font-size: 1.4rem;
+        /* color: aqua; */
+    }
+    .socials{
+        margin-top: 1rem;
+    }
+   
+
+     /* END OF FOOTERS STYLING */
+
+     
+     /* BEGINNING OF NAV STYLING */
+     .nav{
+        height: 610px;
+     
+        width: 180px;
+       
+    }
+    ul li{
+        list-style-type: none;
+        margin: 40px 0;
+        font-size: 1.5rem;
+        /* color: aquamarine; */
+    }
+    li:hover{
+        
+        /* background-color: gray; */
+
+    }
+
+     /* END OF NAV STYLING */
+
+
+     /* BEINING OF OUR MENU */
+  
+    .cat-h2{
+        font-size: 2rem;
+    }
+    .cat-p{
+        font-size: 1.4rem;
+    }
+    .cat-title{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+    .add-btn{
+        padding: 10px 0;
+        font-size: 1.3rem;
+        margin-bottom: 4rem;
+    }
+    /* END OF OUR MENU STYLING */
+
+    /* BEGINNINGOF SUPPORT STYLING */
+    .contact-text{
+      
+        height: 17rem;
+     
+    
+    }
+    .contact-p{
+        font-size: 1.3rem;
+    }
+    .email-label{
+        font-size: 1.3rem;
+
+    }
+    .support-btn{
+        
+        /* background-color: bisque; */
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+        /* background-color: aqua; */
+        width: 700px;
+        padding: 20px;
+
+        
+    }
+    input{
+        /* width: 400px; */
+    }
+    /* .textarea{
+        width: 300px;
+    } */
+
+
+    /* END OF SUPPORT STYLING */
+
+    /* BEGINNING OF CART STYLING */
+    .cart-h1{
+        font-size: 1.7rem;
+    }
+    .empty-cart{
+        font-size: 1.4rem;
+    }
+    .cartadd-item{
+        font-size: 1.5rem;
+    }
+.div1-cart, .div2-tax, .div3-shipping, .div4-total{
+    font-size: 1.5rem;
+
+}
+
+
+
+    /* END OF CART STYLING */
+
+
+}
+
+@media only screen and (min-width:768px) {
+    .container{
+    
+        
+        height: 800px;
+      
+    }
+    .img-main{
+        height: auto;
+
+    }
+    .name{
+       
+        top: 20%;
+        left: 35%;
+    
+    }
+    /* END OF MAIN STYLING */
+
+
+
+
+
+}

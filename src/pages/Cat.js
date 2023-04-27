@@ -29,21 +29,25 @@ function Cat(props) {
 
 
   return (
+    <div>
+
+ 
     <main className='block' >
-        <h2 className='cat-h2'>Categories</h2>
+        <h2 className='cat-h2'>Our Menu</h2>
+        <div className='underline'></div>
         <p className='cat-p'>Enjoy a wholesome experience of the rich meal through a variety of delicious and authentic tasty delights dishes prepared to tingle your taste buds! Exclusively on Tasty Delights.</p>
 
         <div className="row">
             {menu.map((men)=>{
 
 return(
-    <div key={men.id}> 
+    <div key={men.id} className='catinfo-div'> 
     <img src={men.img} alt="" className='small' />
-    <h3>{men.title}</h3>
-    <div>${men.price}</div>
+    <h3 className='cat-title'>{men.title} <span className='cat-price'>${men.price}</span></h3>
+    {/* <div className='cat-price'>${men.price} <span className='btn-span'>  </span></div> */}
     <div className="btn-cat">
-        <button onClick={()=>onAdd(men)}>add</button>
-    </div>
+      <button onClick={()=>onAdd(men)} className='add-btn'>Add to Cart</button>
+    </div> 
 
 </div>
 
@@ -109,9 +113,11 @@ return(
             </article>
         })} */}
          {/* <Basket/> */}
-      <Follow/>
+    
         {/* <Category/> */}
     </main>
+    <Follow/>
+    </div>
   )
 }
 

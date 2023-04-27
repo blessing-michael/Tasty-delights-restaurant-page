@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import Follow from './Follow';
+
 function Basket(props) {
   const {cartItems, onAdd, onRemove}= props
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0)
@@ -29,10 +31,13 @@ function Basket(props) {
     // console.log(cartItems)
   
   return (
-    <article>
-        <h1>cart items</h1>
+    <div className="basket">
+
    
-        <div>{cartItems.length===0 && <div>cart is empty</div>}
+    <article className='cart-article'>
+        <h1 className='cart-h1'>Cart Items</h1>
+   
+        <div>{cartItems.length===0 && <div className='empty-cart'>Cart is empty</div>}
 
 
 </div>
@@ -47,13 +52,13 @@ function Basket(props) {
    
   return (
     
-    <div key={item.id}>
+    <div key={item.id} className='cartadd-item'>
       
       <div className="item-name">{item.title}</div>
     
       <div className="button">
-    <button onClick={()=>onAdd(item)}>+</button>
-    <button onClick={()=>onRemove(item)}>-</button>
+    <button onClick={()=>onAdd(item)} className='add-cartbbtn'>+</button>
+    <button className='remove-cartbtn' onClick={()=>onRemove(item)}>-</button>
   </div>
       <div className="itm qty">{item.qty} * ${item.price.toFixed(2)}</div>
 
@@ -62,9 +67,34 @@ function Basket(props) {
   {/* </div> */}
 })}
 {cartItems.length !== 0 &&  <div>
-  <div className="div1">
+  
     <hr></hr>
-    <div className="itemprice">item price</div>
+
+    <div className="div1-cart">
+    <div className="margin-right: 10px;">Item price</div>
+    <div className="itempricecount">${itemsPrice.toFixed(2)}</div>
+      
+      
+
+
+    </div>
+    <div className="div2-tax">
+    <div className="itemprice">Tax price</div>
+    <div className="itempricecount">${taxPrice.toFixed(2)}</div>
+
+    </div>
+    <div className="div3-shipping">
+    <div className="itemprice">Shipping price</div>
+    <div className="itempricecount">${shippingPrice.toFixed(2)}</div>
+
+    </div>
+    <div className="div4-total">
+    <div className="itemprice">Total price</div>
+    <div className="itempricecount">${totalPrice.toFixed(2)}</div>
+
+    </div>
+    {/* <div className="div1">
+    <div className="margin-right: 10px;">item price</div>
     <div className="itempricecount">${itemsPrice.toFixed(2)}</div>
     <div className="itemprice">tax price</div>
     <div className="itempricecount">${taxPrice.toFixed(2)}</div>
@@ -72,12 +102,14 @@ function Basket(props) {
     <div className="itempricecount">${shippingPrice.toFixed(2)}</div>
     <div className="itemprice">total price</div>
     <div className="itempricecount">${totalPrice.toFixed(2)}</div>
-  </div>
+  </div> */}
   
   </div>}
 
 
     </article>
+    <Follow/>
+    </div>
  
   )
 }

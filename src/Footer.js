@@ -20,7 +20,7 @@ function Footer() {
             <p className='footer-p'>Marina</p>
 
         </div>
-        <div className="">
+        <div className="socials-div">
         <h3 className='footer-h3'>Socials</h3>
 <div className="socials">
 <AiOutlineInstagram style={{marginRight:"20px"}}/>

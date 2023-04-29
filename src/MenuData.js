@@ -72,6 +72,51 @@ const menu = [
       desc: `Brimming with that classic banana cream pie taste, no matter which way you slice it, our Banana Cream Pie Shake aims to please.
       `,
     },
+    {
+      id: 10,
+      title: 'casserole',
+      category: 'breakfast',
+      price: 9.99,
+      img: './images/casserole.avif',
+      desc: `This breakfast casserole has bacon, onion, eggs, hash browns, and lots of cheese. 
+      `,
+    },
+    {
+      id: 11,
+      title: 'muffins',
+      category: 'breakfast',
+      price: 7.99,
+      img: './images/muffins.avif',
+      desc: ` These have a lightly sweet flavor and lots of wholesome ingredients to get your day started .
+      `,
+    },
+    {
+      id: 12,
+      title: 'Baked oatmeal',
+      category: 'breakfast',
+      price: 12.99,
+      img: './images/bakedoatmeal.avif',
+      desc: `  This breakfast is packed with oats, these are perfect for a grab-and-go breakfast.
+      `,
+    },
+    {
+      id: 13,
+      title: 'veggie delights',
+      category: 'lunch',
+      price: 22.99,
+      img: './images/vegmeal.avif',
+      desc: ` Healthy veggie dish pulled out favorite fresh veggies, drizzled with sesame oil, rice vinegar and a kiss coconut aminos.
+      `,
+    },
+    {
+      id: 14,
+      title: 'rice and broccoli',
+      category: 'lunch',
+      price: 24.99,
+      img: './images/rice.avif',
+      desc: `rice with broccoli,onion, butter or margarine, cheese and beaf .
+      `,
+    },
   ];
   export default menu;
   

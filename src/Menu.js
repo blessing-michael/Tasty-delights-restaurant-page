@@ -13,6 +13,7 @@ function Menu({menu}) {
     return <article key={id} className="menu-item">
       
       <img src={img} alt={title} className="img-menu" />
+      
 
 
 <div className="item-info">

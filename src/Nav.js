@@ -4,8 +4,11 @@ import { HiBars4} from "react-icons/hi2";
 import { FaCartArrowDown } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
+    const [showlinks, setShowLinks]= useState(false)
+    const {countcartItems}= props
     const navigate= useNavigate()
+
     const navcat= ()=>{
                 navigate("/menu")
                 
@@ -15,10 +18,10 @@ function Nav() {
                  navigate("/")
               
              }
-             const navfaq= ()=>{
-                 navigate("/faq")
+            //  const navfaq= ()=>{
+            //      navigate("/faq")
                 
-             }
+            //  }
              const navsupport= ()=>{
                  navigate("/support")
                 
@@ -26,6 +29,12 @@ function Nav() {
             const navcart= ()=>{
                         navigate("/cart")
                
+                     }
+                     const toggleNav=()=>{
+                        setShowLinks(true)
+                        console.log("clicked nav")
+
+
                      }
         
 
@@ -38,18 +47,24 @@ function Nav() {
               
 
                 </div>
+                {/* //             <li onClick={()=> navcart()}>Cart {' '}
+//             {countcartItems ? <button>{countcartItems}</button> : " "}</li> */}
              
                <div className="icons-grp">
-               <button className='navbar-btn'> <HiBars4/></button>
+               <button className='navbar-btn'onClick={toggleNav}> <HiBars4/></button>
                 <div className="cart-div" onClick={navcart}>
-               <button className='cart-btn'> <FaCartArrowDown/><span className='cart-numspan'>0</span></button>
+                    <button className='cart-btn'><FaCartArrowDown/>{' '}{countcartItems? <span className='cart-numspan'>{countcartItems}</span>: <span className='cart-numspan'>0</span> }   </button>
+
+
+{/* 
+               <button className='cart-btn'> <FaCartArrowDown/><span className='cart-numspan'>0</span></button> */}
               
                 </div>
 
                </div>
                
             </div>
-            <div className="links-container show-container">
+           <div className="links-container show-container">
                 <ul className='links' >
                 <li onClick={()=> navhome()}>Home</li>
             <li onClick={()=> navcat()}>Menu</li>
@@ -62,6 +77,7 @@ function Nav() {
         </div>
         
     </nav>
+            
     )
 
 

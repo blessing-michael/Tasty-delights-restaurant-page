@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillTwitterCircle, AiOutlineFacebook, AiOutlineInstagram, AiOutlineLinkedin } from 'react-icons/ai'
+import { AiFillTwitterCircle, AiOutlineLinkedin, AiFillGithub } from 'react-icons/ai'
 
 function Footer() {
   return (
@@ -23,9 +23,13 @@ function Footer() {
         <div className="socials-div">
         <h3 className='footer-h3'>Socials</h3>
 <div className="socials">
-<AiOutlineInstagram style={{marginRight:"20px"}}/>
-        <AiFillTwitterCircle style={{marginRight:"20px"}}/>
-        <AiOutlineLinkedin />
+  <a href="https://twitter.com/toonmystory" target="_blank" rel="noopener noreferrer">
+        <AiFillTwitterCircle style={{marginRight:"20px", color:"whitesmoke"}} /></a>
+  <a href="https://github.com/blessing-michael?tab=repositories" target="_blank" rel="noopener noreferrer"><AiFillGithub style={{marginRight:"20px", color:"whitesmoke"}}/></a>
+  <a href="https://www.linkedin.com/in/blessing-asuquo-4509981a2/" target="_blank" rel="noopener noreferrer"> <AiOutlineLinkedin  style={{color:"whitesmoke"}}/></a>
+
+
+       
 
 </div>
        

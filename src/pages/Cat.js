@@ -57,9 +57,11 @@ return(
                 // <Product key={men.id} men={men}/>
                 // console.log( men.title, men.img,'cominf from cat')
             })}
+           
           
             
         </div>
+       
         {/* {console.log(cartItems)} */}
 
 {/* {cartItems.map((item)=>{
@@ -115,6 +117,7 @@ return(
          {/* <Basket/> */}
     
         {/* <Category/> */}
+       
     </main>
     <Follow/>
     </div>

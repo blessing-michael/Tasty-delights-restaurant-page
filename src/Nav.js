@@ -11,11 +11,13 @@ function Nav(props) {
 
     const navcat= ()=>{
                 navigate("/menu")
+                setShowLinks(false)
                 
             
              }
              const navhome= ()=>{
                  navigate("/")
+                 setShowLinks(false)
               
              }
             //  const navfaq= ()=>{
@@ -24,14 +26,16 @@ function Nav(props) {
             //  }
              const navsupport= ()=>{
                  navigate("/support")
+                 setShowLinks(false)
                 
             }
             const navcart= ()=>{
                         navigate("/cart")
+                        
                
                      }
                      const toggleNav=()=>{
-                        setShowLinks(true)
+                        setShowLinks(!showlinks)
                         console.log("clicked nav")
 
 
@@ -64,7 +68,7 @@ function Nav(props) {
                </div>
                
             </div>
-           <div className="links-container show-container">
+           <div className={`${showlinks ? 'links-container show-container' : 'links-container'}`} >
                 <ul className='links' >
                 <li onClick={()=> navhome()}>Home</li>
             <li onClick={()=> navcat()}>Menu</li>

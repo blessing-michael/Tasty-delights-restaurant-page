@@ -369,18 +369,52 @@
 /* beginninng of navbar styling */
 
 /* BEGIINING OF NEW NAV STYLING */
-.links-container {
+
+/* styled for small screen Affecting big screen */
+/* .links-container {
+   
+    height: 430px;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 0%;
+   
+    z-index: 1;
+    width: 150px;
+    transition: all 0.3s ease-out;
+   
+  } */
+  .links-container{
     height: 0;
     overflow: hidden;
+    transition: all 0.3s ease-out;
+    /* background-color: aqua; */
+    
+    /* left: 0%; */
    
+    /* z-index: 1; */
+    width: 150px;
+    /* height: 430px; */
+
   }
+
+  .show-container{
+    height: 27rem;
+    /* background-color: aquamarine; */
+    background-color: white;
+    position: absolute;
+    left: 0%;
+    /* overflow: hidden; */
+  }
+  /* styled for small screen Affecting big screen */
   .nav-name{
     
     padding: 1.2rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
     position: sticky;
     top: 0;
-    background-color: whitesmoke;
+    background-color: white;
+    /* background-color: antiquewhite; */
+    height: 37px;
    
 
    
@@ -425,21 +459,29 @@
     cursor: pointer;
   }
   /* END OF NEW NAV STYLING */
-.nav{
+/* .nav{
     height: 410px;
     background-color: white;
     position: absolute;
-    right: 0%;
+    right: 0%; */
     /* CODE CHANGED FROM 10% TO 90%, height chnged from 440px to 410 */
-    top :90%;
+    /* top :90%;
     z-index: 1;
     width: 150px;
     transition: all 0.3s ease-out;
-}
+} */
 ul li{
     list-style-type: none;
-    margin: 20px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    /* color: aqua; */
 }
+ul{
+    /* background-color: aqua; */
+    padding: 20px;
+    /* margin: 1.5rem 0; */
+}
+
 
 /* end of navbar styling */
 
@@ -749,6 +791,21 @@ textarea::placeholder{
     
 }
 /* END OF CART STYLING */
+/* BEGINNING OF CHECKOUT BTN CONTAINER */
+.checkout-btnCon{
+    margin-top: 2rem;
+}
+.checkout-btn{
+    padding: 0.5rem 1rem;
+    background-color: rgb(223, 93, 46);
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    width: 100%;
+}
+/* END OF CHECKOUT BTN SYLING */
+
 
 /* Beginning of question div styling */
 
@@ -786,7 +843,11 @@ textarea::placeholder{
     display: none;
 } */
 @media only screen and (min-width:768px) {
-   
+   /* BEGINNING OF NEW NAV STYLING */
+   .show-container{
+    height: 39rem;
+  
+  }
     .container{
     
         
@@ -1278,9 +1339,10 @@ textarea::placeholder{
   .links{
     display: flex;
     text-align: center;
+    /* height: 80px; */
     position: absolute;
-    top: -20%;
-    left: 20%;
+     top: -40%;
+    left: 25%; 
    
   
     align-items: center;
@@ -1395,9 +1457,12 @@ textarea::placeholder{
   .links{
     display: flex;
     text-align: center;
+    /* position: static; */
+    /* background-color: aquamarine; */
+    /* height: 80px; */
     position: absolute;
-    top: -20%;
-    left: 20%;
+    /* top: -20%; */
+    /* left: 20%; */
    
   
     align-items: center;

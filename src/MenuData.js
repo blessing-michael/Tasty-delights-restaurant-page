@@ -90,15 +90,15 @@ const menu = [
       desc: ` These have a lightly sweet flavor and lots of wholesome ingredients to get your day started .
       `,
     },
-    {
-      id: 12,
-      title: 'Baked oatmeal',
-      category: 'breakfast',
-      price: 12.99,
-      img: './images/bakedoatmeal.avif',
-      desc: `  This breakfast is packed with oats, these are perfect for a grab-and-go breakfast.
-      `,
-    },
+    // {
+    //   id: 12,
+    //   title: 'Baked oatmeal',
+    //   category: 'breakfast',
+    //   price: 12.99,
+    //   img: './images/bakedoatmeal.avif',
+    //   desc: `  This breakfast is packed with oats, these are perfect for a grab-and-go breakfast.
+    //   `,
+    // },
     {
       id: 13,
       title: 'veggie delights',

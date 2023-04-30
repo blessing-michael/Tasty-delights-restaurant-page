@@ -91,7 +91,11 @@ function Basket(props) {
     <div className="div4-total">
     <div className="itemprice">Total price</div>
     <div className="itempricecount">${totalPrice.toFixed(2)}</div>
+   
 
+    </div>
+    <div className="checkout-btnCon">
+      <button className='checkout-btn'>checkout</button>
     </div>
     {/* <div className="div1">
     <div className="margin-right: 10px;">item price</div>

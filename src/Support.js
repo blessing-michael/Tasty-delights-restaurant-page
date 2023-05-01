@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Follow from './Follow'
 import { toast } from 'react-toastify'
 
 function Support() {
+  const [name, setName]= useState("")
+  const [message, setMessage]= useState("")
 
   const HandleSubmit=(e)=>{
+   
     e.preventDefault()
+    setName("")
+    setMessage("")
+    // setName({email:"", message:""})
     toast.success('thank you for reaching out to us')
+   
+
 
   }
   return (
@@ -29,8 +37,8 @@ function Support() {
 
       <form className='form' >
      <div className="email">
-     <label className='email-label'>email</label>
-      <input type="email"  placeholder='Your email ' className='email-input'/>
+     <label className='email-label' htmlFor='email'>email</label>
+      <input type="email"  placeholder='Your email ' className='email-input' id="email" name='email' value={name} onChange={(e)=>setName(e.target.value)} />
 
       
      </div>
@@ -38,8 +46,8 @@ function Support() {
    
    <div className="message">
 
-    <div className="label-div">
-    <label className='label-message'>message</label>
+    <div className="label-div" >
+    <label className='label-message' htmlFor='message'>message</label>
 
     </div>
    
@@ -47,7 +55,7 @@ function Support() {
  
 
   
-      <textarea name="" id="" cols="30" rows="10" placeholder='Drop a message' className='textarea'></textarea>
+      <textarea name="" id="message" cols="30" rows="10" placeholder='Drop a message' className='textarea' value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
    </div>
    
    <button type='submit' className='support-btn' onClick={HandleSubmit}>Send message</button>
